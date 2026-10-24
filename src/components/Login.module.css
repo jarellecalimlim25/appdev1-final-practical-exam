@@ -1,0 +1,200 @@
+
+.page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  width: 100%;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 64px;
+  min-width: 0;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.flower {
+  width: 100%;
+  max-width: 700px;
+  height: 90vh;
+  object-fit: contain;
+  display: block;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111111;
+  margin: 0 0 32px;
+  line-height: 1.2;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 420px;
+}
+
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  width: 100%;
+}
+
+.field label {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  color: #111111;
+}
+
+.field input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  height: 30px;
+  padding: 0 10px;
+  border: 1px solid #dedede;
+  border-radius: 9px;
+  background: #ffffff;
+  font-size: 12px;
+}
+
+
+.field input::placeholder {
+  color: #aaaaaa;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #000000;
+}
+
+.terms input {
+  accent-color: #2618e2;
+}
+
+.signupButton {
+  width: 100%;
+  height: 44px;
+  border: none;
+  border-radius: 8px;
+  background: #0c6e11;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.signupButton:hover {
+  opacity: 0.9;
+}
+
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 420px;
+  margin: 28px 0;
+  color: #777777;
+  font-size: 13px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e5e5e5;
+}
+
+.socialButtons {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.socialButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+  height: 44px;
+  padding: 0 10px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  color: #222222;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.socialButton img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.socialButton span {
+  white-space: nowrap;
+}
+
+.accountText {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 13px;
+  color: #222222;
+}
+
+.accountText a {
+  margin-left: 4px;
+  color: #5b4bdb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+
+  .leftSection {
+    padding: 32px 24px;
+  }
+
+  .rightSection {
+    min-height: 360px;
+  }
+
+  .flower {
+    width: 100%;
+    height: 360px;
+  }
+}

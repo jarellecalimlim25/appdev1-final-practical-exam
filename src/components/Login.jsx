@@ -37,8 +37,8 @@ function Login() {
             <span>Remember 30 days</span>
             </label>
 
-            <button type="submit" className={styles.signupButton}>
-            Signup
+            <button type="submit" className={styles.LoginButton}>
+            Login
             </button>
         </form>        
             <div className={styles.divider}>
@@ -63,9 +63,9 @@ function Login() {
             </button>
             </div>
             <p className={styles.accountText}>
-            Have an account?{" "}
+            Don't have an account?{" "}
             <a href="#" onClick={(event) => event.preventDefault()}>
-                Sign In
+                Sign Up
             </a>
          </p>
 

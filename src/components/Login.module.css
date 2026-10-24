@@ -95,7 +95,7 @@
   accent-color: #2618e2;
 }
 
-.signupButton {
+.LoginButton {
   width: 100%;
   height: 44px;
   border: none;
@@ -107,7 +107,7 @@
   cursor: pointer;
 }
 
-.signupButton:hover {
+.LoginButton:hover {
   opacity: 0.9;
 }
 

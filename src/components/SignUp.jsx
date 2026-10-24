@@ -5,7 +5,10 @@ function SignUp() {
   return (
     <main className={styles.page}>
       <section className={styles.leftSection}>
-        {/* Empty pa */}
+        <section className={styles.leftSection}>
+            <h1 className={styles.title}>Get Started Now</h1>
+        </section>
+
       </section>
 
       <section className={styles.rightSection}>

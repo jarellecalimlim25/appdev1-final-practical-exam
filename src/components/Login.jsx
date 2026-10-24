@@ -13,16 +13,6 @@ function Login() {
 
         <form className={styles.form}>
             <div className={styles.field}>
-            <label htmlFor="name">Name</label>
-                <input
-                    id="name"
-                    type="text"
-                    placeholder="Enter your name"
-                    required
-                 />
-            </div>
-
-            <div className={styles.field}>
             <label htmlFor="email">Email address</label>
             <input
                 id="email"
@@ -44,7 +34,7 @@ function Login() {
 
             <label className={styles.terms}>
             <input type="checkbox" required />
-            <span>I agree to the terms &amp; policy</span>
+            <span>Remember 30 days</span>
             </label>
 
             <button type="submit" className={styles.signupButton}>

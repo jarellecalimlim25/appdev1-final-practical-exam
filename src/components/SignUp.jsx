@@ -5,11 +5,48 @@ function SignUp() {
   return (
     <main className={styles.page}>
       <section className={styles.leftSection}>
-        <section className={styles.leftSection}>
-            <h1 className={styles.title}>Get Started Now</h1>
-        </section>
+        <h1 className={styles.title}>Get Started Now</h1>
+        <form className={styles.form}>
+            <div className={styles.field}>
+            <label htmlFor="name">Name</label>
+                <input
+                    id="name"
+                    type="text"
+                    placeholder="Enter your name"
+                    required
+                 />
+            </div>
 
-      </section>
+            <div className={styles.field}>
+            <label htmlFor="email">Email address</label>
+            <input
+                id="email"
+                type="email"
+                placeholder="Enter your email"
+                required
+            />
+            </div>
+
+            <div className={styles.field}>
+            <label htmlFor="password">Password</label>
+            <input
+                id="password"
+                type="password"
+                placeholder="Enter your password"
+                required
+            />
+            </div>
+
+            <label className={styles.terms}>
+            <input type="checkbox" required />
+            <span>I agree to the terms &amp; policy</span>
+            </label>
+
+            <button type="submit" className={styles.signupButton}>
+            Signup
+            </button>
+        </form>
+        </section>
 
       <section className={styles.rightSection}>
         <img

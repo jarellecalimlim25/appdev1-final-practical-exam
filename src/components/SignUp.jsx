@@ -45,7 +45,35 @@ function SignUp() {
             <button type="submit" className={styles.signupButton}>
             Signup
             </button>
-        </form>
+        </form>        
+            <div className={styles.divider}>
+            <span>Or</span>
+            </div>
+
+            <div className={styles.socialButtons}>
+            <button type="button" className={styles.socialButton}>
+                <img
+                src="/src/assets/icons-google-logo.svg"
+                alt=""
+                />
+                <span>Sign in with Google</span>
+            </button>
+
+            <button type="button" className={styles.socialButton}>
+                <img
+                src="/src/assets/icons-apple-logo.svg"
+                alt=""
+                />
+                <span>Sign in with Apple</span>
+            </button>
+            </div>
+            <p className={styles.accountText}>
+            Have an account?{" "}
+            <a href="#" onClick={(event) => event.preventDefault()}>
+                Sign In
+            </a>
+         </p>
+
         </section>
 
       <section className={styles.rightSection}>
